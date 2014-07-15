@@ -1,3 +1,6 @@
+var ENDPOINT = '192.168.59.103'
+var PORT = 4569
+
 module.exports = {
   variants: {
     article: {
@@ -29,10 +32,11 @@ module.exports = {
       container: "CONTAINER_NAME"
     },
     S3: {
+	  endpoint: ENDPOINT,
+	  port: PORT,
       key: 'API_KEY',
       secret: 'SECRET',
-      bucket: 'BUCKET_NAME',
-      region: 'REGION'
+      bucket: 'BUCKET',
     }
   },
 

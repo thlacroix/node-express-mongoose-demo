@@ -1,3 +1,4 @@
+var MONGO_IP = process.env.DB_PORT_27017_TCP_ADDR
 
 var path = require('path')
   , rootPath = path.normalize(__dirname + '/..')
@@ -15,7 +16,7 @@ var path = require('path')
 
 module.exports = {
   development: {
-    db: 'mongodb://localhost/noobjs_dev',
+    db: 'mongodb://'+MONGO_IP+'/noobjs_dev',
     root: rootPath,
     notifier: notifier,
     app: {
@@ -48,7 +49,7 @@ module.exports = {
     }
   },
   test: {
-    db: 'mongodb://localhost/noobjs_test',
+    db: 'mongodb://'+MONGO_IP+'/noobjs_test',
     root: rootPath,
     notifier: notifier,
     app: {

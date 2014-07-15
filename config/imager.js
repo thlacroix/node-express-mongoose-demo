@@ -1,5 +1,5 @@
-var ENDPOINT = '192.168.59.103'
-var PORT = 4569
+var ENDPOINT = process.env.S3_ENDPOINT || '192.168.59.103';
+var PORT = process.env.S3_PORT || 4569;
 
 module.exports = {
   variants: {

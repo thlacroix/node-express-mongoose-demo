@@ -1,6 +1,13 @@
 [![Build Status](https://travis-ci.org/madhums/node-express-mongoose-demo.png)](https://travis-ci.org/madhums/node-express-mongoose-demo)
 
-**work in progress:** Migrating the demo to express 4 and swig - checkout [express4.x-swig](https://github.com/madhums/node-express-mongoose-demo/tree/express-4.x-swig) branch
+# Additional info for docker-demo
+
+To connect the application to the database, you need to set the following environnement variables:
+
+* `DB_PORT_27017_TCP_ADDR` to the address of the database (automatic if the container is linked to `db`)
+* `DB_PORT_27017_TCP_PORT` to the port of the database (automatic if the container is linked to `db`)
+* `S3_ENDPOINT` to the endpoint of the s3 service (default to `192.168.59.103`)
+* `S3_PORT` to the port of the s3 service (default to `4569`)
 
 # Nodejs Express Mongoose Demo
 
